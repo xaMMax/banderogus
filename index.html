@@ -31,7 +31,7 @@
                         Пишаюся своїми подвигами, бороню Батьківщину та підтримую
                         позитивний дух народу. Слава Україні!
                     </p>
-                    <button class="banderogus-launch-button">Запустити гуся</button>
+                    <button class="banderogus-launch-button" id="open-form-modal-btn">Запустити гуся</button>
 
                 </div>
                 <img src="./img/gus.svg" alt="Тут є гусь, дійсно!" class="banderogus-image">
@@ -79,9 +79,9 @@
         </div>
     </footer>
 
-    <div class="modal-background">
+    <div class="modal-background" id="form-modal">
         <form action="#" class="modal-form">
-            <button alt="Закрити" class="close-modal-button"></button>
+            <button alt="Закрити" class="close-btn"></button>
 
             <img src="./img/trezub.svg" alt="Тризуб">
             <h4 class="modal-form-title">Поділися, будь ласка, поштою</h4>
@@ -96,15 +96,15 @@
                 <label for="user-email" class="modal-field-name">Email</label>
                 <input type="email" class="modal-field-input" id="user-email">
             </div>
-            <button class="banderogus-modal-button">Запустити гуся</button>
+            <button class="banderogus-modal-button" id="launch-btn">Запустити гуся</button>
         </form>
     </div>
     
 
-    <div class="modal-background">
+    <div class="modal-background" id="success-modal">
         <div  class="modal-form">
 
-            <button alt="Закрити" class="close-modal-button"></button>
+            <button alt="Закрити" class="close-btn"></button>
             <img src="./img/trezub.svg" alt="Тризуб">
             
             <h4 class="modal-form-title">Дякуємо, гусь успішно запущений</h4>
@@ -113,6 +113,6 @@
             
         </div>
     </div>
-    
+    <script src="./scripts/form.js"></script>
 </body>
 </html>

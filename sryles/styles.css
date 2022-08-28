@@ -236,7 +236,7 @@ header{
     color: #000000;
     padding: 4px 8px;
 }
-.close-modal-button{
+.close-btn{
     background: url(../img/close.svg) 50% 50% no-repeat;
     background-size: contain;
     position: absolute;
