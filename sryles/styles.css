@@ -316,10 +316,6 @@ header{
         width: auto;
         height: auto;
     }
-    .main-page {
-        display: flex;
-        flex-direction: row;
-    }
 }
 @media only screen and (max-height: 600px){
     .banderogus-image {
