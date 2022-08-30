@@ -4,6 +4,7 @@ html{
 body{
     background-color: white;
     height: 100%;
+    max-width: 1170;
     font-family: 'Montserrat', sans-serif;
 
     -webkit-touch-callout: none;
@@ -100,6 +101,7 @@ header{
     font-size: 48px;
     line-height: 100px;
     color: #1B1D1F;
+    text-align: center;
 }
 .gus-description{
     font-weight: 400;
@@ -128,9 +130,11 @@ header{
 }
 .gus-facts-row-container{
     display: flex;
+    flex-direction: row;    
     justify-content: space-between;
     height: 100%;
-    width: 1170px;
+    width: 100%;
+    max-width: 1170px;
 }
 .gus-fact-item{
     width: 33%;
@@ -141,7 +145,7 @@ header{
     flex-direction: column;
     align-items: center;
 }
-.footer{
+.footer-content{
     width: 1170px;
     height: 376px;
     background: linear-gradient(270deg, #C1E8FF 0%, #FFFFFF 100%);
@@ -190,13 +194,11 @@ header{
     align-items: center;
 
 }
-
 .modal-form-container {
     background: #FFFFFF;
     padding: 32px 92px 60px 92px;
     position: relative;
 }
-
 .modal-form-title{
     font-weight: 600;
     font-size: 24px;
@@ -276,4 +278,52 @@ header{
     width: 100%;
     z-index: 2;
     pointer-events: none;
+}
+@media only screen and (max-width: 800px) {
+    .gus-facts-row-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .gus-description {
+        width: auto;
+    }
+    .gus-facts {
+        display: flex;
+        align-items: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .gus-main-idea {
+        width: auto;
+        text-align: center;
+    }
+    .footer-content{
+        width: auto;
+    }
+    .banderogus-image-container{
+        width: auto;
+    }
+    .banderogus-image{
+        width: 100%;
+        height: 100%;
+    }
+    .wrapper{
+        width: auto;
+        height: auto;
+    }
+    .banderogus-container{
+        width: auto;
+        height: auto;
+    }
+    .main-page {
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media only screen and (max-height: 600px){
+    .banderogus-image {
+        width: 100%;
+        height: 100%;
+    }
 }
